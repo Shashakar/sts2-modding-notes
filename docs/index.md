@@ -22,6 +22,11 @@ These notes collect confirmed findings from real mod development, runtime testin
 - [Harmony Patching](harmony-patching.md) records the working Harmony setup and `__args` finding.
 - [Useful Types](useful-types.md) summarizes runtime types useful for run-state inspection.
 
+## Research leads
+
+- [Community Research](community-research.md) maps public docs, GitHub repositories, and web-discovered leads.
+- [Potential Methods](references/potential-methods/README.md) stores metadata-discovered method candidates before runtime confirmation.
+
 ## Raw and generated references
 
 - [Discovery Log](discovery-log.md) preserves the chronological findings.

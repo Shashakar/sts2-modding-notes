@@ -1,5 +1,19 @@
 # Discovery Log
 
+## 2026-06-03 - Community research pass
+
+Added [Community Research](community-research.md) as a published source map for public Slay the Spire 2 modding resources.
+
+High-value sources from the pass:
+
+- [Alchyr/BaseLib-StS2](https://github.com/Alchyr/BaseLib-StS2)
+- [Alchyr/ModTemplate-StS2 wiki](https://github.com/Alchyr/ModTemplate-StS2/wiki)
+- [BAKAOLC/STS2-RitsuLib](https://github.com/BAKAOLC/STS2-RitsuLib)
+- [STS2.GG install guide](https://sts2.gg/mods/install-guide)
+- [GitHub topic: slay-the-spire-2](https://github.com/topics/slay-the-spire-2)
+
+Key next research targets are BaseLib save/hook patches, RitsuLib run data and patching folders, dev-tooling mods, companion/run trackers, and multiplayer save-slot mods.
+
 ## 2026-06-01 - Minimal mod loading
 
 Confirmed that a DLL-only mod can load with:

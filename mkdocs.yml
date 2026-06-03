@@ -77,6 +77,8 @@ nav:
           - Hook: generated/Hook.md
           - RunLobby: generated/RunLobby.md
           - BaseLib: generated/BaseLib.md
+  - Research:
+      - Community Research: community-research.md
       - Raw References: references/README.md
       - Potential Methods:
           - Overview: references/potential-methods/README.md

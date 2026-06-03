@@ -6,6 +6,8 @@
 - **Potential**: found through inspection or discovery, but not yet tested.
 - **Possibility**: inferred that something like this may exist, but more research is needed.
 
+For public repository and documentation leads that have not been runtime-tested locally, see [Community Research](community-research.md).
+
 | Purpose | Type | Method | Status | Notes |
 |---|---|---|---|---|
 | Run started | `MegaCrit.Sts2.Core.Runs.RunState` | `CreateForNewRun` | Confirmed | Best durable run-start hook. Provides players, acts, modifiers, game mode, ascension, seed. |

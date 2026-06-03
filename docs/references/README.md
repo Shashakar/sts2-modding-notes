@@ -14,3 +14,5 @@ reflection notes
 ```
 
 Use these as references, then promote confirmed findings into `docs/`.
+
+For web-discovered source maps and repository leads, see [Community Research](../community-research.md).
