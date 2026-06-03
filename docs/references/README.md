@@ -7,8 +7,8 @@ Do not commit game DLLs here.
 Good files to store:
 
 ```text
-candidate-run-methods.txt
-candidate-lobby-methods.txt
+potential-run-methods.txt
+potential-lobby-methods.txt
 generated method lists
 reflection notes
 ```

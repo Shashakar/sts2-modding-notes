@@ -55,9 +55,8 @@ dotnet run -- --assembly ../../deps/sts2.dll method-signatures MegaCrit.Sts2.Cor
 
 ## Certainty labels
 
-- **Confirmed**: verified in a running mod
-- **Candidate**: found via reflection but not runtime-tested
-- **Speculative**: inferred but not proven
-- **Rejected**: previously considered but not recommended
+- **Confirmed**: known to be usable, working, and documented.
+- **Potential**: found through inspection or discovery, but not yet tested.
+- **Possibility**: inferred that something like this may exist, but more research is needed.
 
 Do not present guesses as confirmed facts.

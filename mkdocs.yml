@@ -56,7 +56,7 @@ nav:
       - Mod Loading: mod-loading.md
       - Deployment: deployment.md
       - Common Errors: common-errors.md
-  - Confirmed Findings:
+  - Findings:
       - Known Hooks: known-hooks.md
       - Run Lifecycle: run-lifecycle.md
       - Multiplayer Lobby: multiplayer-lobby.md
@@ -74,7 +74,7 @@ nav:
           - RunSaveManager: generated/RunSaveManager.md
           - BaseLib: generated/BaseLib.md
       - Raw References: references/README.md
-      - Candidate Methods: references/candidate-methods/README.md
+      - Potential Methods: references/potential-methods/README.md
   - Examples:
       - Overview: examples/README.md
       - Minimal DLL Mod: examples/minimal-dll-mod.md

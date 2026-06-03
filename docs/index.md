@@ -14,9 +14,9 @@ These notes collect confirmed findings from real mod development, runtime testin
 - [Mod Loading](mod-loading.md) for a minimal initializer and manifest.
 - [Common Errors](common-errors.md) for failure modes that have already bitten this project.
 
-## Most useful confirmed findings
+## Most useful findings
 
-- [Known Hooks](known-hooks.md) lists confirmed, candidate, speculative, and rejected hooks.
+- [Known Hooks](known-hooks.md) lists confirmed, potential, and possible hooks.
 - [Run Lifecycle](run-lifecycle.md) documents the confirmed run-start hook.
 - [Multiplayer Lobby](multiplayer-lobby.md) captures the multiplayer roster findings.
 - [Harmony Patching](harmony-patching.md) records the working Harmony setup and `__args` finding.
@@ -31,9 +31,8 @@ These notes collect confirmed findings from real mod development, runtime testin
 
 ## Certainty labels
 
-- **Confirmed**: verified in a running mod.
-- **Candidate**: found via reflection but not runtime-tested.
-- **Speculative**: inferred but not proven.
-- **Rejected**: previously considered but not recommended.
+- **Confirmed**: known to be usable, working, and documented.
+- **Potential**: found through inspection or discovery, but not yet tested.
+- **Possibility**: inferred that something like this may exist, but more research is needed.
 
 Do not present guesses as confirmed facts.
