@@ -72,8 +72,14 @@ nav:
           - StartRunLobby: generated/StartRunLobby.md
           - CombatManager: generated/CombatManager.md
           - RunSaveManager: generated/RunSaveManager.md
+          - RunHistorySaveManager: generated/RunHistorySaveManager.md
+          - ProgressSaveManager: generated/ProgressSaveManager.md
+          - Hook: generated/Hook.md
+          - RunLobby: generated/RunLobby.md
           - BaseLib: generated/BaseLib.md
       - Raw References: references/README.md
-      - Potential Methods: references/potential-methods/README.md
+      - Potential Methods:
+          - Overview: references/potential-methods/README.md
+          - Run-End and Save Candidates: references/potential-methods/run-end-and-save-candidates.md
   - Tools:
       - Sts2Inspector: tools/sts2-inspector.md

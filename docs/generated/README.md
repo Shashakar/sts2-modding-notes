@@ -12,6 +12,10 @@ Player.md
 StartRunLobby.md
 CombatManager.md
 RunSaveManager.md
+RunHistorySaveManager.md
+ProgressSaveManager.md
+Hook.md
+RunLobby.md
 BaseLib.md
 ```
 
