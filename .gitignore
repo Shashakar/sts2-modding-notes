@@ -1,0 +1,25 @@
+# Local dependencies - do not commit game/mod DLLs
+deps/
+*.dll
+*.pdb
+
+# Generated build output
+bin/
+obj/
+
+# Godot output, if examples are later added
+.godot/
+.import/
+export.cfg
+export_presets.cfg
+
+# Local generated docs can be committed selectively, but leave temp ignored
+tmp/
+temp/
+
+# OS/editor
+.vs/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
