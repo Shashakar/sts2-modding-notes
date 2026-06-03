@@ -25,11 +25,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
-
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
