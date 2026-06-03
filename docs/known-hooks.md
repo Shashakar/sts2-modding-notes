@@ -17,9 +17,9 @@
 | Combat end | `MegaCrit.Sts2.Core.Hooks.Hook` | `AfterCombatEnd` | Potential | Metadata-discovered hook dispatcher. May fire more broadly than victory; test loss, victory, and room-transition behavior. |
 | Creature before death | `MegaCrit.Sts2.Core.Hooks.Hook` | `BeforeDeath` | Potential | Creature-level hook. Needs runtime testing to distinguish player death, monster death, summons, and prevention flows. |
 | Creature after death | `MegaCrit.Sts2.Core.Hooks.Hook` | `AfterDeath` | Potential | Creature-level hook with `wasRemovalPrevented` and animation length. Needs runtime testing before using as a run-loss signal. |
-| Run save | `MegaCrit.Sts2.Core.Saves.Managers.RunSaveManager` | `SaveRun` | Potential | Could fire repeatedly. Needs runtime testing before relying on it. |
-| Progress save update | `MegaCrit.Sts2.Core.Saves.Managers.ProgressSaveManager` | `UpdateWithRunData` | Potential | Receives serialized run data and a `victory` boolean. Promising post-run candidate, but not runtime-confirmed. |
+| Current run save | `MegaCrit.Sts2.Core.Saves.SaveManager` | `SaveRun` | Confirmed | Returns `Task`; wait for completion before reading saved run data. `preFinishedRoom` may be `null` in observed single-player flow. |
+| Progress/final run update | `MegaCrit.Sts2.Core.Saves.SaveManager` | `UpdateProgressWithRunData` | Confirmed | Receives `SerializableRun` and `victory`. `victory=true` is successful completion; `victory=false` was observed for give-up after continuing a saved run. |
 | Run history save | `MegaCrit.Sts2.Core.Saves.Managers.RunHistorySaveManager` | `SaveHistory` | Potential | Receives a `RunHistory`. Promising archival/post-run candidate, but not runtime-confirmed. |
-| Multiplayer abandon | `MegaCrit.Sts2.Core.Multiplayer.Game.Lobby.RunLobby` | `AbandonRun` | Potential | Multiplayer/lobby abandon surface found by inspection. Needs testing for local-only and multiplayer paths. |
+| Multiplayer abandon | `MegaCrit.Sts2.Core.Multiplayer.Game.Lobby.RunLobby` | `AbandonRun` | Potential | Harmony patch applies, but it was not the observed successful abandon path in a save-quit-continue-give-up test. |
 | Game-over screen | `MegaCrit.Sts2.Core.Nodes.NRun` | `ShowGameOverScreen` | Potential | UI-level game-over surface taking `SerializableRun`. Useful lead, but likely too UI-specific for durable run-end tracking. |
 | UI embark | Character select screen methods | `OnEmbarkPressed` / `BeginRun` | Possibility | UI-level start methods may exist, but more research is needed before treating them as durable hooks. |

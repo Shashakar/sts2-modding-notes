@@ -104,3 +104,63 @@ Player <platform id>, IRONCLAD
 ```
 
 Use this as a fallback source for platform ID and character in lobby capture.
+
+## `MegaCrit.Sts2.Core.Saves.SerializableRun`
+
+**Status:** Confirmed
+
+Known useful public properties from runtime testing:
+
+```text
+Players
+GameMode
+Ascension
+RunTime
+SaveTime
+StartTime
+WinTime
+CurrentActIndex
+```
+
+Useful properties for saved, progressed, and finished run snapshots:
+
+| Property | Use |
+|---|---|
+| `Players` | Serialized player snapshots for the run |
+| `GameMode` | Run mode |
+| `Ascension` | Run ascension level |
+| `RunTime` | Run duration |
+| `SaveTime` | Current save timestamp |
+| `StartTime` | Run start timestamp |
+| `WinTime` | Win timestamp when present |
+| `CurrentActIndex` | Current act position |
+
+## `MegaCrit.Sts2.Core.Saves.Runs.SerializablePlayer`
+
+**Status:** Confirmed
+
+Known useful public properties from runtime testing:
+
+```text
+NetId
+Gold
+Deck
+Relics
+Potions
+CurrentHp
+MaxHp
+CharacterId
+```
+
+Useful properties for run snapshot inspection:
+
+| Property | Use |
+|---|---|
+| `NetId` | Platform-style player ID |
+| `Gold` | Player gold at snapshot time |
+| `Deck` | Reliable deck count/source in saved, progressed, and finished snapshots |
+| `Relics` | Reliable relic count/source in saved, progressed, and finished snapshots |
+| `Potions` | Reliable potion count/source in saved, progressed, and finished snapshots |
+| `CurrentHp` | Current HP at snapshot time |
+| `MaxHp` | Max HP at snapshot time |
+| `CharacterId` | Serialized character/class ID |

@@ -2,7 +2,7 @@
 
 These methods were found through metadata inspection from `E:\Programming\first-mod\.tmp\inspect-sts2`.
 
-Status: metadata-discovered only. They show API shape, not runtime semantics.
+Status: mostly metadata-discovered only. They show API shape, not runtime semantics unless a note explicitly says runtime testing has now confirmed behavior.
 
 ## Run completion and combat-end hooks
 
@@ -48,6 +48,24 @@ These may help detect player death or death-prevention flows, but they are creat
 
 ## Progress and run history save surface
 
+Runtime-confirmed save/progress methods:
+
+```csharp
+Task SaveManager.SaveRun(
+  AbstractRoom preFinishedRoom,
+  bool saveProgress
+)
+
+void SaveManager.UpdateProgressWithRunData(
+  SerializableRun serializableRun,
+  bool victory
+)
+```
+
+`SaveRun` is confirmed patchable with a Harmony postfix. For save-and-quit/current-run saves, wait for the returned `Task` before reading saved data. After the task completes, `SaveManager.LoadRunSave()` can return `ReadSaveResult<SerializableRun>` with `Success=true` and populated `SaveData`. In observed single-player flow, `preFinishedRoom` may be `null`.
+
+`UpdateProgressWithRunData` is confirmed patchable with a Harmony postfix. `victory=true` represents successful run completion. `victory=false` was observed when abandoning/giving up after continuing a saved run. The `serializableRun` argument can be used as the final run snapshot.
+
 Potential post-run/progression methods:
 
 ```csharp
@@ -83,3 +101,5 @@ void NRun.ShowGameOverScreen(
 ```
 
 These may be useful for run-abandon or game-over detection, but they are likely UI or multiplayer-state surfaces rather than universal run-end hooks.
+
+`RunLobby.AbandonRun()` has been patched successfully, but it has not yet been observed as the successful abandon path. In a tested save-quit-continue-give-up flow, the observed successful finish event came from `SaveManager.UpdateProgressWithRunData(..., victory: false)`.
