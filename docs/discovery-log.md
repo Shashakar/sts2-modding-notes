@@ -5,8 +5,8 @@
 Confirmed that a DLL-only mod can load with:
 
 ```text
-FirstMod.dll
-FirstMod.json
+ExampleMod.dll
+ExampleMod.json
 ```
 
 For Harmony patches, also deploy:
@@ -86,9 +86,9 @@ Both can fire for the same run start, requiring dedupe.
 Confirmed two-player multiplayer capture:
 
 ```text
-Names=Shashakar, Logain Ablar
-NetIds=76561198008501134, 76561198141181565
-Seed=K0C8TK126Z
+Names=<player one>, <player two>
+NetIds=<platform id>, <platform id>
+Seed=<seed>
 GameMode=Standard
 Ascension=0
 Players=2

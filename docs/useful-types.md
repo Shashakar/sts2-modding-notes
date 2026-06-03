@@ -42,7 +42,7 @@ BaseOrbSlotCount
 Piles
 ```
 
-Useful properties for run tracking:
+Useful properties for run-state inspection:
 
 | Property | Use |
 |---|---|
@@ -100,7 +100,7 @@ Initial runtime reflection found no obvious public properties, but `ToString()` 
 Example:
 
 ```text
-Player 76561198008501134, IRONCLAD
+Player <platform id>, IRONCLAD
 ```
 
 Use this as a fallback source for platform ID and character in lobby capture.

@@ -10,7 +10,7 @@ The current working modding path uses:
 - Harmony for runtime patching
 - Optional BaseLib for content-style mods
 
-For telemetry/mods that only inspect runtime state, BaseLib may not be required.
+For mods that only inspect runtime state, BaseLib may not be required.
 
 ## Basic workflow
 
@@ -25,14 +25,14 @@ For telemetry/mods that only inspect runtime state, BaseLib may not be required.
 
 ## Minimal confirmed mod output
 
-For a DLL-only telemetry mod, this worked:
+For a DLL-only mod, this worked:
 
 ```text
 Slay the Spire 2/
   mods/
-    FirstMod/
-      FirstMod.dll
-      FirstMod.json
+    ExampleMod/
+      ExampleMod.dll
+      ExampleMod.json
       0Harmony.dll
 ```
 

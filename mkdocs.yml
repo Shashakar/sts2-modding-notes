@@ -75,9 +75,5 @@ nav:
           - BaseLib: generated/BaseLib.md
       - Raw References: references/README.md
       - Potential Methods: references/potential-methods/README.md
-  - Examples:
-      - Overview: examples/README.md
-      - Minimal DLL Mod: examples/minimal-dll-mod.md
-      - Run Tracker Notes: examples/run-tracker-notes.md
   - Tools:
       - Sts2Inspector: tools/sts2-inspector.md

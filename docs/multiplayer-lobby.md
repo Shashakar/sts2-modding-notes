@@ -36,25 +36,25 @@ Skip duplicate captures within about 3 seconds.
 ## Confirmed multiplayer lobby example
 
 ```text
-Seed=K0C8TK126Z
+Seed=<seed>
 GameMode=Standard
 Ascension=0
 Players=2
-Names=Shashakar, Logain Ablar
+Names=<player one>, <player two>
 ```
 
 Lobby player objects:
 
 ```text
-LobbyPlayer[0]: ToString=Player 76561198008501134, IRONCLAD
-LobbyPlayer[1]: ToString=Player 76561198141181565, IRONCLAD
+LobbyPlayer[0]: ToString=Player <platform id>, IRONCLAD
+LobbyPlayer[1]: ToString=Player <platform id>, IRONCLAD
 ```
 
 Run-state player identities:
 
 ```text
-Player.NetId=76561198008501134
-Player.NetId=76561198141181565
+Player.NetId=<platform id>
+Player.NetId=<platform id>
 ```
 
 ## Useful finding
@@ -64,24 +64,24 @@ Player.NetId=76561198141181565
 Example:
 
 ```text
-Player 76561198008501134, IRONCLAD
+Player <platform id>, IRONCLAD
 ```
 
 Parse this into:
 
 ```json
 {
-  "platformPlayerId": "76561198008501134",
+  "platformPlayerId": "<platform id>",
   "character": "Ironclad",
-  "raw": "Player 76561198008501134, IRONCLAD"
+  "raw": "Player <platform id>, IRONCLAD"
 }
 ```
 
 Display names were captured separately from lobby/platform context:
 
 ```text
-Shashakar
-Logain Ablar
+<player one>
+<player two>
 ```
 
 The useful final join is:

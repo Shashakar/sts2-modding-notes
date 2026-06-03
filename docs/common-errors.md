@@ -41,8 +41,8 @@ GodotSharpEditor.dll
 Start minimal:
 
 ```text
-FirstMod.dll
-FirstMod.json
+ExampleMod.dll
+ExampleMod.json
 0Harmony.dll
 ```
 

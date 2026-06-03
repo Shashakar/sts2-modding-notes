@@ -9,10 +9,10 @@ using HarmonyLib;
 using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Modding;
 
-namespace FirstMod;
+namespace ExampleMod;
 
 [ModInitializer("ModLoaded")]
-public static class FirstMod
+public static class ExampleMod
 {
     private static Harmony? _harmony;
 
@@ -20,16 +20,16 @@ public static class FirstMod
     {
         try
         {
-            Log.Warn("[RunTracker] Mod loaded.");
+            Log.Warn("[ExampleMod] Mod loaded.");
 
-            _harmony = new Harmony("dextarm.sts2.runtracker");
+            _harmony = new Harmony("yourname.sts2.examplemod");
             RunStartPatcher.TryPatch(_harmony);
 
-            Log.Warn("[RunTracker] Patch setup completed.");
+            Log.Warn("[ExampleMod] Patch setup completed.");
         }
         catch (Exception ex)
         {
-            Log.Error($"[RunTracker] Failed during ModLoaded: {ex}");
+            Log.Error($"[ExampleMod] Failed during ModLoaded: {ex}");
         }
     }
 }

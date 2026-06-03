@@ -40,7 +40,7 @@ Changing only the `.csproj` SDK version was not enough if the project was still 
 
 ## BaseLib
 
-BaseLib is useful for content mods, but it is not required for a simple telemetry/run-tracking mod unless BaseLib APIs are used.
+BaseLib is useful for content mods, but it is not required for a simple runtime-inspection mod unless BaseLib APIs are used.
 
 If used at build time:
 

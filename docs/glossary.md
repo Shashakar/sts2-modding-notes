@@ -18,20 +18,4 @@ Multiplayer lobby player object. Initial reflection did not show obvious public 
 
 Observed `UInt64` player identity. In multiplayer testing, it matched Steam-style IDs.
 
-Prefer exposing this externally as `platformPlayerId`.
-
-## RunKey
-
-A stable dedupe key for an actual run. Suggested shape:
-
-```text
-seed|gameMode|ascension|platformPlayerId1,platformPlayerId2
-```
-
-## EventId
-
-Unique ID for a local event write. Useful for tracing, but not stable across retries if events are regenerated.
-
-## JSONL
-
-JSON Lines format. One JSON object per line. Useful for append-only event logs.
+Prefer exposing this externally as a platform player ID rather than a Steam-specific name until other platforms are tested.

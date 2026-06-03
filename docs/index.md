@@ -20,7 +20,7 @@ These notes collect confirmed findings from real mod development, runtime testin
 - [Run Lifecycle](run-lifecycle.md) documents the confirmed run-start hook.
 - [Multiplayer Lobby](multiplayer-lobby.md) captures the multiplayer roster findings.
 - [Harmony Patching](harmony-patching.md) records the working Harmony setup and `__args` finding.
-- [Useful Types](useful-types.md) summarizes runtime types useful for run tracking.
+- [Useful Types](useful-types.md) summarizes runtime types useful for run-state inspection.
 
 ## Raw and generated references
 
